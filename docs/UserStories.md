@@ -52,7 +52,7 @@
   - Priority: 30
   - Status: Not Started
 
--US Get relevant information about related grants 
+- US Get relevant information about related grants 
   - Description: User will be able view Title, Release Date, Expired Date, Document Number, Document Type, Activity Code, Clinical Trials and URL from the information page.
   - Estimate: 5
   - Priority: 60
@@ -125,7 +125,7 @@
   - Status: Not Started 
 
 
-###Definitions:
+### Definitions:
 
 **Cosine**: A trigonometric function angle or ratio. In our site, it will be used to compare the similarity between keyword and grant vectors.
 
