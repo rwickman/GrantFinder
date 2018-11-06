@@ -46,11 +46,11 @@
   - Status: Not Started
 
 
-- Us View results page
-Description: User will be able to view the results of their search. The results page will have the title of all related NIH grants accompanied by their respective Cosine value.
-Estimate: 4.0
-Priority: 30
-Status: Not Started
+- US View results page
+  - Description: User will be able to view the results of their search. The results page will have the title of all related NIH grants accompanied by their respective Cosine value.
+  - Estimate: 4.0
+  - Priority: 30
+  - Status: Not Started
 
 -US Get relevant information about related grants 
   - Description: User will be able view Title, Release Date, Expired Date, Document Number, Document Type, Activity Code, Clinical Trials and URL from the information page.
@@ -125,10 +125,16 @@ Status: Not Started
   - Status: Not Started 
 
 
-Definitions:
-Cosine: A trigonometric function angle or ratio. In our site, it will be used to compare the similarity between keyword and grant vectors.
-Grant: non-repayable funds acquired through the government or an organization to assist in funding some type of project or research.
-FAQ: Frequently asked questions, are used to answer common questions a user may have.
-Activity Code: A 3-character code used distinguish between categories within a particular funding group.  Groups include grants, cooperative grants, and contracts.
-Search Bar: Field of input by the user to search for grants in the database.
-National Institute of Health (NIH): United States Government agency responsible for Biomedical and public health research.
+###Definitions:
+
+**Cosine**: A trigonometric function angle or ratio. In our site, it will be used to compare the similarity between keyword and grant vectors.
+
+**Grant**: non-repayable funds acquired through the government or an organization to assist in funding some type of project or research.
+
+**FAQ**: Frequently asked questions, are used to answer common questions a user may have.
+
+**Activity Code**: A 3-character code used distinguish between categories within a particular funding group.  Groups include grants, cooperative grants, and contracts.
+
+**Search Bar**: Field of input by the user to search for grants in the database.
+
+**National Institute of Health (NIH)**: United States Government agency responsible for Biomedical and public health research.
