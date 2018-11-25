@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: grants
+#
+#  id              :integer          not null, primary key
+#  title           :string
+#  release_date    :date
+#  expired_date    :date
+#  document_number :string
+#  document_type   :string
+#  activity_code   :string
+#  clinical_trails :string
+#  url             :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  release_date: 2018-11-25
+  expired_date: 2018-11-25
+  document_number: MyString
+  document_type: MyString
+  activity_code: MyString
+  clinical_trails: MyString
+  url: MyString
+
+two:
+  title: MyString
+  release_date: 2018-11-25
+  expired_date: 2018-11-25
+  document_number: MyString
+  document_type: MyString
+  activity_code: MyString
+  clinical_trails: MyString
+  url: MyString
