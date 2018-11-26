@@ -1,26 +1,19 @@
-<% provide(:title, 'Grant')%>
+<% provide(:title, 'Home')%>
 <main role="main" class="container">
 
-<h1>GrantFinder</h1>
+    <h1>GrantFinder</h1>
 
-<br>
-
-<form>
-    <p>Please enter the term you  would like to find:</p>
-    <input type="text" name="name">
-</form>
-
-<form method="get" action="index.html">
-    <button type="submit">Search</button>
-</form>
-
-<form>
-    <br>
-    <br>
     <br>
 
-    <p>Our search bar will search through the grants on the National Institute of Health website and show you what grants have the term you're searching for.</p>
-</form>
+    <form method="get" action="results">
+        <p>Please enter the term you  would like to find:</p>
+        <input type="text" name="name">
+        <button type="submit">Search</button>
+    </form>
+
+    <div style="margin-top:4rem">
+        <p>Our search bar will search through the grants on the National Institute of Health website and show you what grants have the term you're searching for.</p>
+    </div>
 
 
 </main><!-- /.container -->
