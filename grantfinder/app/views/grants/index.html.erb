@@ -1,0 +1,29 @@
+<h1>Grants</h1>
+<table style="width:100%">
+  <tr>
+    <th>title</th>
+    <th>release_date</th> 
+    <th>expired_date </th>
+    <th>document_number</th>
+    <th>document_type </th>
+    <th>activity_code  </th>
+    <th>clinical_trails</th>
+    <th>url</th>
+    <th>grant page</th>
+  </tr>
+  <tbody>
+  <% @grant.each do |grant|%>
+  <tr>
+    <td><%= grant.title %></td>
+    <td><%= grant.release_date %></td>
+    <td><%= grant.expired_date %></td>
+    <td><%= grant.document_number %></td>
+    <td><%= grant.document_type %></td>
+    <td><%= grant.activity_code %></td>
+    <td><%= grant.clinical_trails %></td>
+    <td><%= grant.url%></td>
+    <td><%= link_to 'Show', result_path(grant) %></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
