@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 
 class GrantScrapper:
     def __init__(self):
-        self.termSet = set()
-        self.termList = list() # will need to convert the set to a list only once so the order is maintained
         # May not need skipterms due to tf-idf
         self.skipterms = set(["funding", "opportunity", "purpose", "announcement", "this", "the", "a", "of", "from", "to", "through", "foa", "is", "in", "with", "into", "and", "or", "that", "on", "for", "as", "have", "be", "should", "by", "will", "can", "it", "note", "applicants"]) #Maybe read in a list a of common terms
 
@@ -45,8 +43,6 @@ class GrantScrapper:
     # Scrape a grant document and return purpose and term vector
     def scrape(self, title, url):
         try:
-            term_frequency_map = dict()
-
             doc = requests.get(url)
             soup = BeautifulSoup(doc.text, "html.parser")
             divs = soup.findAll("div", {"class" : "row" })#soup.findAll("div", {"class" : "col-md-8 datacolumn"}) # Get all div elements with class row
@@ -92,5 +88,6 @@ def main():
     gs = GrantScrapper()
     csv_file = "11_5_2018-AllGuideResultsReport.csv"
     gs.scrape_csv(csv_file)
+
 if __name__ == "__main__":
     main()
