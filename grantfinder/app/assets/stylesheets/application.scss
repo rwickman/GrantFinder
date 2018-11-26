@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ * // = require_tree .
+ * // = require_self
+ */
+
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+body {
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+.home {
+    text-align: center;
+}
+
+.about
+{
+    text-align: center;
+}
+
+#about_software
+{
+    list-style: none;
+    
+}
+.container_description {
+    display:flex;
+    flex-wrap: wrap;
+}
+.description_review {
+    width: 18%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header
+{
+    box-sizing: border-box;
+    background-color: #00030a;
+    color:white;
+    padding: 0.75em;
+    text-align: center;
+}
+.profile_pic{
+    transform: rotate(-90deg);
+    margin-right: 1.5em;
+}
+.review_header{
+    text-align: center;
+}
+.review_image_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+}
+.review{
+  margin:2%;
+}
+
+#subtitle{
+    color:gray;
+    margin-top: -20px;
+}
+
+div.field
+{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+div.actions {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+label,
+input {
+    display: block;
+}
+
+div.invalid-feedback {
+    display: block;
+}
