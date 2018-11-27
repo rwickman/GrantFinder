@@ -1,16 +1,15 @@
 <% provide(:title, 'Results')%>
 <main role="main" class="container">
   <h1>Grants</h1>
+  <span style="float:left; left: 50%; position: relative;">
+    <%= link_to 'Search Page', home_path() %>
+  </span>
   <table style="width:100%">
     <tr>
-      <th>title</th>
-      <th>release_date</th> 
-      <th>expired_date </th>
-      <th>document_number</th>
-      <th>document_type </th>
-      <th>activity_code  </th>
-      <th>clinical_trails</th>
-      <th>grant page</th>
+      <th style="width:70%">Title</th>
+      <th style="width:10%">Release Date</th> 
+      <th style="width:10%">Expiry Date </th>
+      <th style="width:10%">Grant Page</th>
     </tr>
     <tbody>
     <% @grant.each do |grant|%>
@@ -18,13 +17,17 @@
       <td><%= grant.title %></td>
       <td><%= grant.release_date %></td>
       <td><%= grant.expired_date %></td>
-      <td><%= grant.document_number %></td>
-      <td><%= grant.document_type %></td>
-      <td><%= grant.activity_code %></td>
-      <td><%= grant.clinical_trails %></td>
       <td><%= link_to 'Show', result_path(grant) %></td>
     </tr>
     <% end %>
     </tbody>
   </table>
+  <% if @start != 0 %>
+      <span style="float: left;">
+        <%= link_to 'Previous Page', params.permit(@start).merge(start: @start - 15) %>
+      </span>
+  <% end %>
+  <span style="float:right">
+    <%= link_to 'Next Page', params.permit(@start).merge(start: @start + 15) %>
+  </span>
 </main><!-- /.container -->
