@@ -1,6 +1,9 @@
 <% provide(:title, 'Results')%>
 <main role="main" class="container">
   <h1>Grants</h1>
+  <span style="float:left; left: 50%; position: relative;">
+    <%= link_to 'Search Page', home_path() %>
+  </span>
   <table style="width:100%">
     <tr>
       <th style="width:70%">Title</th>
@@ -20,7 +23,9 @@
     </tbody>
   </table>
   <% if @start != 0 %>
-    <%= link_to 'Previous Page', params.permit(@start).merge(start: @start - 15) %>
+      <span style="float: left;">
+        <%= link_to 'Previous Page', params.permit(@start).merge(start: @start - 15) %>
+      </span>
   <% end %>
   <span style="float:right">
     <%= link_to 'Next Page', params.permit(@start).merge(start: @start + 15) %>
