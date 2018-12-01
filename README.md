@@ -1,4 +1,4 @@
 # GrantFinder
 ## Directories
-grantfinder: The GrantFinder Web App
-docs: Informatiion about the Web App
+* grantfinder: The GrantFinder Web App
+* docs: Information and documents about the Web App
