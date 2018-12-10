@@ -9,7 +9,28 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <% if user_signed_in? %>
+    <span class="navbar-text"style="margin-right: 1rem"><%= current_user.email%></span>
+    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-outline-primary" %>
+
+  <%else%>
+    <%= link_to 'Sign In', new_user_session_path, class: "btn btn-outline-primary" %>
+
+  <%end%>
+
   <body>
+
+  <% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+    <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <% if flash[:alert] %>
+    <div class="alert alert-danger" role="alert">
+    <%= flash[:alert] %>
+    </div>
+  <% end %>
     <%= yield %>
   </body>
 </html>

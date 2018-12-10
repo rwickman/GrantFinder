@@ -9,6 +9,10 @@
 #  updated_at  :datetime         not null
 #  grant_id    :integer
 #
+# Indexes
+#
+#  index_grant_descriptions_on_grant_id  (grant_id)
+#
 
 require 'test_helper'
 

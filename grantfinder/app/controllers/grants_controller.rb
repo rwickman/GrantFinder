@@ -2,6 +2,7 @@ require 'socket'
 require 'json'
 
 class GrantsController < ApplicationController
+    skip_before_action :authenticate_user!, only: [:index]
     def index
 	    @start = params['start'].to_i
         #@grant = Grant.all[@start, 15]
@@ -41,6 +42,7 @@ class GrantsController < ApplicationController
 
     def show
         @grant = Grant.find(params[:id])
+
     end
     # def search
     #     @start = params['page'].to_i
