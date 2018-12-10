@@ -1,42 +1,33 @@
 <% provide(:title, 'Results')%>
 <main role="main" class="container">
   <h1>Grants</h1>
-  <div style="left: 50%; position: relative;">
-		<p>
-				<%=@total%> total result(s).
-		</p>
-  </div>
-  <div style="left: 50%; position: relative;">
+  <span style="float:left; left: 50%; position: relative;">
     <%= link_to 'Search Page', home_path() %>
-  </div>
+  </span>
   <table style="width:100%">
     <tr>
-      <th style="width:60%">Title</th>
-      <th style="width:12%">Release Date</th> 
-      <th style="width:12%">Expiry Date </th>
-      <th style="width:12%">Grant Page</th>
-      <th style="width:4%">Score</th>
+      <th style="width:70%">Title</th>
+      <th style="width:10%">Release Date</th> 
+      <th style="width:10%">Expiry Date </th>
+      <th style="width:10%">Grant Page</th>
     </tr>
     <tbody>
-    <% @grant.zip(@score).each do |grant, score|%>
+    <% @grant.each do |grant|%>
     <tr style="border-bottom: 0.5px solid black;">
       <td><%= grant.title %></td>
       <td><%= grant.release_date %></td>
       <td><%= grant.expired_date %></td>
       <td><%= link_to 'Show', result_path(grant) %></td>
-			<td><%= score %>%</td>
     </tr>
     <% end %>
     </tbody>
   </table>
-	<% if @total  > 15 %>
-		<% if @page > 0 %>
-				<span style="float: left;">
-					<%= link_to 'Previous Page', params.permit(@page, @query).merge(page: @page - 1, query: @query) %>
-				</span>
-		<% end %>
-		<span style="float:right">
-			<%= link_to 'Next Page', params.permit(@page, @query).merge(page: @page + 1, query: @query) %>
-	<% end %>
+  <% if @start != 0 %>
+      <span style="float: left;">
+        <%= link_to 'Previous Page', params.permit(@start).merge(start: @start - 15) %>
+      </span>
+  <% end %>
+  <span style="float:right">
+    <%= link_to 'Next Page', params.permit(@start).merge(start: @start + 15) %>
   </span>
 </main><!-- /.container -->
