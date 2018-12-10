@@ -2,6 +2,7 @@ require 'socket'
 require 'json'
 
 class GrantsController < ApplicationController
+
     skip_before_action :authenticate_user!, only: [:index]
     def index
 	    @start = params['start'].to_i
