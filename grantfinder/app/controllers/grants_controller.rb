@@ -22,21 +22,28 @@ class GrantsController < ApplicationController
         if !json_results.nil?
             search_results = JSON.parse(json_results)
             grants = Array.new
+						scores = Array.new
             search_results.each do |result|
                 grants.push(Grant.find(result[0])) # Retrieve the grant from the database 
-								scores.push(((result[1]*10000).round)/100)
+								scores.push((result[1]*10000).round/100)
             end
             # puts grants
         end
 
-        @grant = grants # These are the grant results from the search
+				@page = params['page'].to_i
+				@query = params['query']
+				@total = grants.length
+				@score = scores[ @page * 15, 15 ]
+
+				@grant = grants[ @page * 15, 15 ]
+        #@grant = grants # These are the grant results from the search
     end
 
     def show
         @grant = Grant.find(params[:id])
     end
     # def search
-    #     @start = params['start'].to_i
+    #     @start = params['page'].to_i
     #     @grant = Grant.all[@start, 15]
     #     puts(params[:query])
     # end
