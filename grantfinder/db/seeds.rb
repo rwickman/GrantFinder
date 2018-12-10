@@ -54,3 +54,9 @@ csv.each do |row|
     end
     j += 1
 end
+
+user_1 = User.new(email: 'user1@email.com', password: 'dddddd')
+user_1.save!
+
+user_2 = User.new(email: 'user2@email.com', password: 'dddddd')
+user_2.save!
