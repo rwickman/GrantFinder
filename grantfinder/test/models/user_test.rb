@@ -23,4 +23,9 @@ class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+
+  test "should be valid user" do
+    one = users(:one)
+    assert one.valid?
+  end
 end
