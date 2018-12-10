@@ -24,6 +24,7 @@ class GrantsController < ApplicationController
             grants = Array.new
             search_results.each do |result|
                 grants.push(Grant.find(result[0])) # Retrieve the grant from the database 
+								scores.push(((result[1]*10000).round)/100)
             end
             # puts grants
         end
