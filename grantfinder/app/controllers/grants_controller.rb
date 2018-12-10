@@ -5,5 +5,6 @@ class GrantsController < ApplicationController
     end
     def show
         @grant = Grant.find(params[:id])
+
     end
 end
