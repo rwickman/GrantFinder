@@ -61,16 +61,16 @@
 ### Task: User Profiles (Task Name)
 - Description: I will add user login features. Users will be able to register and login with a username and password. (Task Description)
 - How to Evaluate: Users should be able to create a personal profile, using their email address for their username.(Instructions)
-- Outcome of Task: xxx (Description; filled in at end of iteration)
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: Used devise gem to set up user logins. Now, you have to be signed up(by creating a username and password) before getting access to any features of the web app (Description; filled in at end of iteration)
+- Issue: 12 (Issue Number; filled in at end of iteration)
+- Pull Request: 20 (Pull Request Number; filled in at end of iteration)
 
 ### Task: Back Button (Task Name)
 - Description: Add a backlink from the show page to the results page. (Task Description)
 - How to Evaluate: Users should be able navigate from the show page to the results page without using web browsers back button.(Instructions)
-- Outcome of Task: xxx (Description; filled in at end of iteration)
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: show page now contains a Back button which takes user directly to the result page that they came from. (Description; filled in at end of iteration)
+- Issue: 13 (Issue Number; filled in at end of iteration)
+- Pull Request: 21 (Pull Request Number; filled in at end of iteration)
 
 
 ## Tasks: Adam
