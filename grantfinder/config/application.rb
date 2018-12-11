@@ -1,13 +1,5 @@
 require_relative 'boot'
 
-searchEngineJob = fork do
-  exec "python3 #{Kernel.__dir__}/../data_mining/searchLSA.py"
-end
-Process.detach(searchEngineJob)
-puts "------------------------"
-puts "SEARCH PROCESS STARTED"
-puts "------------------------"
-
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
