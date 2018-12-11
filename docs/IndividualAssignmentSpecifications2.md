@@ -43,17 +43,17 @@
 ### Task: LSA (Task Name)
 - Description: Need to perform LSA on the generated term vectors (Task Description)
 - How to Evaluate: It will be able to correctly compute the LSA matrix when through each grant’s term vector (Instructions)
-- Outcome of Task: xxx (Description; filled in at end of iteration)
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: Wrote python scripts using the gensim library to create the LSA matrix from the grant's term vectors in the database. (Description; filled in at end of iteration)
+- Issue: 10 (Issue Number; filled in at end of iteration)
+- Pull Request: 14 (Pull Request Number; filled in at end of iteration)
 
 
 ### Task: Compute Cosine Similarity and connect to search (Task Name)
 - Description: For each grant, compute the cosine similarity between itself and the keyword vector entered by the user. Then return the grants who's similarity returns a value the exceeds a heuristic threshold. (Task Description)
 - How to Evaluate: As long as the results page will receive these computed values, the search engine should work (Instructions)
-- Outcome of Task: xxx (Description; filled in at end of iteration)
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: To communicate with Ruby and Python, I used a socket. I had to start searchLSA.py as a background process before the rails server started. Then, when a user tries to search something, Ruby will connect to the socket and send the query. With the query, searchLSA.py will transform the vector into the LSI space and then compute the cosine similarity between it and the rest of the grant term vectors. After, it will return the grant vectors who cos similarity exceeds a threshold. (Description; filled in at end of iteration)
+- Issue: 11 (Issue Number; filled in at end of iteration)
+- Pull Request: 15 (Pull Request Number; filled in at end of iteration)
 
 
 ## Tasks: Chris (Team Member Name)
