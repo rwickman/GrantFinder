@@ -14,6 +14,17 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 source ~/.bashrc
 nvm install --lts
 ```
+Make sure you have python3.x installed as well.
+Furthermore, we are using the gensim library for LSA computations, so you will need to install it with pip3. If you do not have pip3 installed please run:
+
+```sh
+sudo apt-get install python3-pip python-dev build-essential 
+```
+
+Then to install gensim, do:
+```
+sudo pip3 install gensim
+```
 
 ### Verify installation
 
