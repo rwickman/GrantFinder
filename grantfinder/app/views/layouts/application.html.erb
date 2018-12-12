@@ -16,11 +16,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
+          <% if user_signed_in? %>
             <%= form_with url: "/results", method: :get, local: true do |form| %>
-            <%= form.text_field :query%>
+              <%= form.text_field :query%>
             
         
-            <%= form.submit "Search"%>
+              <%= form.submit "Search"%>
+            <% end %>
+
+          <%else%>
+
+          <%end%>
+            
           </ul>
           <!-- 
           <form class="form-inline mt-2 mt-md-0">
@@ -28,8 +35,7 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
             -->
-          
-        <% end %>
+        
           <% if user_signed_in? %>
             <span class="navbar-text"style="margin-right: 1rem"><%= current_user.email%></span>
             <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-outline-primary" %>
