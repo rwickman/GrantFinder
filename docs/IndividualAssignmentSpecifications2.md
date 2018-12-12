@@ -10,8 +10,7 @@
   - Adam
   - Mac (Team Member Name)
 - Video Demo Creators:
-  - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
-  - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
+  - Ryan (Team Member Name, Number of Points; filled in at end of iteration)
 - Demo-Booth Operator: Chris (Team Member Name; filled in at end of iteration)
 
 ## Tasks: Mac (Team Member Name)
