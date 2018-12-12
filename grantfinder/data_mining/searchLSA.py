@@ -4,7 +4,7 @@ from time import sleep
 from gensim import corpora, models, similarities
  
 class SearchLSA:
-    def __init__(self, port=50001, host ='', threshold=0.30):
+    def __init__(self, port=50001, host ='', threshold=0.20):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.PORT = port
         self.HOST = host
