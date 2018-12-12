@@ -84,13 +84,13 @@
 ### Task: Create a NavBar at the Top of the Views
 - Description: I will need to add a Navigation Bar to the top of all of our pages, so that there is ease in travelling from page to page, as well as ease in logging in. The bar will also have a search bar within it.
 - How to Evaluate: To evaluate, simply look to the top of any page and see if there is a bar there. Simple task, but the real evaluation comes from seeing if the bar allows the user to move between the pages. Also make sure you can get to the login screen from the bar. Lastly, use the Search Bar within the NavBar. If everything works, then the task has been completed correctly.
-- Outcome of Task: There is now a NavBar at the top of the views that allows the user to always be able to return to the search page, as well as make a search through the NavBar.
+- Outcome of Task: There is now a NavBar at the top of the views that allows the user to always be able to return to the search page, as well as make a search through the NavBar. It also tells the user if they are signed in and who they are signed in as, and allows them to sign out.
 - Issue: 23
 - Pull Request: xxx
 
 ### Task: Make Search Page UI
 - Description: I need to make the UI for the search page more pleasing to the eye. This is not detrimental to the program’s performance, but it is indicative of a better application overall. I will make the page look more colorful and add a logo for the application.
 - How to Evaluate: Look at the search page, if it shows signs that it has been made aesthetically pleasing, with a logo above the search bar, then this task has been completed correctly.
-- Outcome of Task: The UI of the Search page is now looking quite pretty. I created a logo that is above the search bar, and I have placed everything on the page to look more pleasing.
+- Outcome of Task: The UI of the Search page is now looking quite nice. I created a logo that is above the search bar, and I have placed everything on the page to look more pleasing.
 - Issue: 22
 - Pull Request: xxx
