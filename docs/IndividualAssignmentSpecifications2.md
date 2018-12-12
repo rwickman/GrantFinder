@@ -78,20 +78,20 @@
 ### Task: Fix Connection between Search Bar and Results Page
 - Description: I need to use the newly created LSA function to have the search bar create a cosine for the term entered, and then send this information to the Results page, having the results to be limited to only cosine factors above 0.21.
 - How to Evaluate: To evaluate, simply enter a term into the search bar and hit search. The results page that then follows should list Grants that contain the term entered. Make sure to take note of the cosine values of each one, as they should be listed from greatest to least, and there should be no cosine value smaller than 0.21.
-- Outcome of Task: xxx (Description; filled in at end of iteration
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: Ryan fixed this issue when he implemented LSA. Thus, he completed this task, and not me. However, the task has been completed, and the search function is now fully functional.
+- Issue: 24
+- Pull Request: 14
 
 ### Task: Create a NavBar at the Top of the Views
 - Description: I will need to add a Navigation Bar to the top of all of our pages, so that there is ease in travelling from page to page, as well as ease in logging in. The bar will also have a search bar within it.
 - How to Evaluate: To evaluate, simply look to the top of any page and see if there is a bar there. Simple task, but the real evaluation comes from seeing if the bar allows the user to move between the pages. Also make sure you can get to the login screen from the bar. Lastly, use the Search Bar within the NavBar. If everything works, then the task has been completed correctly.
-- Outcome of Task: xxx (Description; filled in at end of iteration)
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: There is now a NavBar at the top of the views that allows the user to always be able to return to the search page, as well as make a search through the NavBar.
+- Issue: 23
+- Pull Request: xxx
 
 ### Task: Make Search Page UI
 - Description: I need to make the UI for the search page more pleasing to the eye. This is not detrimental to the program’s performance, but it is indicative of a better application overall. I will make the page look more colorful and add a logo for the application.
 - How to Evaluate: Look at the search page, if it shows signs that it has been made aesthetically pleasing, with a logo above the search bar, then this task has been completed correctly.
-- Outcome of Task: xxx (Description; filled in at end of iteration)
-- Issue: xxx (Issue Number; filled in at end of iteration)
-- Pull Request: xxx (Pull Request Number; filled in at end of iteration)
+- Outcome of Task: The UI of the Search page is now looking quite pretty. I created a logo that is above the search bar, and I have placed everything on the page to look more pleasing.
+- Issue: 22
+- Pull Request: xxx
