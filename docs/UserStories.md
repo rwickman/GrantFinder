@@ -76,13 +76,7 @@
   - Priority: 10
   - Status: Done
 
-- US Filter Grants
-  - Description: User will be able to filter grants based on different criteria
-  - Estimate: 5
-  - Priority: 100
-  - Status: Done
-
-- US Find a for an Exact Grant
+- US Find info for an Exact Grant
   - Description:User will able to find the exact grant they want information about, instead of just the keywords used.
   - Estimate: 3
   - Priority: 80
@@ -92,7 +86,19 @@
   - Description: User can create an account that will have information on them
   - Estimate: 4.5
   - Priority:  40
-  - Status: Not started
+  - Status: Done
+
+- US Sign in
+  - Description: User can sign into their account
+  - Estimate: 4.5
+  - Priority:  40
+  - Status: Done
+
+- US Reset password
+  - Description: User can reset password to their account
+  - Estimate: 4.5
+  - Priority:  40
+  - Status: Done
 
 
 ### Definitions:
