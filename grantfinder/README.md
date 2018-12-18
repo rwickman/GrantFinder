@@ -39,6 +39,14 @@ rails s -b 0.0.0.0
 
 Then open up a web browser and go to `localhost:3000`
 
+
+## How To Login
+ * When you load The GrantFinder Web App you will be prompted to login
+ * Ther are two user names reserved for testing: user1@email.com and user2@email.com
+ * Both have password: dddddd(that's 6 lowercase d's)
+ * Use either of the usernames to do an initial login
+ * Alternatively, you can sign up using an email that is not the same as either of the usernames reserved for testing
+ 
 ## Seed the Data
 
 We are populating the database through a CSV and JSON data file for the Grant and GrantDescription model, respectively. So, you may need to run `rails db:seed` to perform this operation.
