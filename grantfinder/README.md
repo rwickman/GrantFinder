@@ -1,4 +1,7 @@
 # GrantFinder
+## Overview
+GrantFinder is a Web App built with Ruby on Rails. Its purpose is to allow researchers to easily find grants from the National Institutes of Health (NIH) website by using our Search Engine. Initially I scrapped descriptions of each grant from the website to populate the database. Next, I applied Latent Semantic Analysis (LSA) on the dataset as a preprocessing step. Finally, when a user enters in a query, it will compute the cosine similarity to find related grants.
+
 ## Installation
 
 If you are cloning this repo from scratch, you will need to run the following commands:
